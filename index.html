@@ -52,7 +52,8 @@
        while(list.firstChild)list.removeChild(list.firstChild);
        
        for (var i=0; i< storage.length; i++){
-       
+       var _key = storage.key(i);
+         
        var tr = document.createElement("tr");
        var td1 = document.createElement("td");
        var td2 = document.createElement("td");
