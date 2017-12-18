@@ -110,13 +110,12 @@
           if(f.type.match('image.*')){
             reader.onload = function (evt) {
               var li = document.createElement('li');
-              var img = doucument.createElement('img');
+              var img = document.createElement('img');
               img.src = evt.target.result;
               li.appendChild(img);
               li.innerHTML += "<br />";
               disp.appendChild(li);
             }
-            event.preventDefault();
             reader.readAsDataURL(f);
           }
             
