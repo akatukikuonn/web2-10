@@ -115,6 +115,8 @@
               li.innerHTML += "<br />";
               disp.appendChild(li);
             }
+            reader.readAsdataURL(f);
+          }
             
             if(f.type.mach('text.*')){
               reader.onload = function (evt) {
