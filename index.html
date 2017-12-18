@@ -120,7 +120,7 @@
             reader.readAsDataURL(f);
           }
             
-            if(f.type.mach('text.*')){
+            if(f.type.match('text.*')){
               reader.onload = function (evt) {
                 disp.innerHTML = reader.result;
               }
